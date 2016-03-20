@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{site_title}}</title>
+    <meta name="description" content="{{site_description}}">
+    <link rel="canonical" href="#absolute_page_address">
+    <link rel="apple-touch-icon" sizes="192x192" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="js/uheader.js"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "{{site_name}}",
+      "url": "#{{absolute_page_address}}"
+    }
+    </script>
+	</head>
+	<body>
+		<div id="site-wrapper" itemscope itemtype="http://schema.org/WebPage">
+    <meta itemprop="name" content="{{site_name}}">
+    <meta itemprop="description" content="{{site_description}}">
+
+    <!-- Header with Banner -->
+    <header id="site-header" itemscope itemtype="http://schema.org/WPHeader">
+      <div id="site-name" class="header-name full-width-bar">
+        <div>
+          <h1 itemprop="headline">{{site_name}}</h1>
+          <p itemprop="description">{{site_name_description}}</p>
+        </div>
+        <button id="btn-menu-second" class="btn-menu-container menu-close" type="button">
+          <span class="btn-menu-lines"></span>
+        </button>
+      </div>
+      <div id="site-logo" class="header-logo">
+        <a href="#">{{logo-text}}</a>
+      </div>
+      <!-- Second navigation block -->
+      <nav id="menu-second" class="header-menu-second full-width-bar">
+        <h3>Вспомогательная навигация</h3>
+        <ul>
+          <li class="selected"><a href="#">Menu Text 1</a></li>
+          <li><a href="#">Menu Text 2</a></li>
+          <li><a href="#">Menu Text 3</a></li>
+        </ul>
+      </nav>
+      <div id="menu-social" class="header-menu-social">
+        <!--noindex-->
+        <ul class="soc">
+          <li><a rel="nofollow" class="soc-vk" href="#"></a></li>
+          <li><a rel="nofollow" class="soc-google" href="#"></a></li>
+          <li><a rel="nofollow" class="soc-youtube" href="#"></a></li>
+          <li><a rel="nofollow" class="soc-rss" href="#"></a></li>
+        </ul>
+        <!--/noindex-->
+      </div>
+      <form id="form-search" class="header-menu-search" role="search">
+        <input type="submit" value="Искать">
+        <input type="search" required placeholder="Для поиска нажать Enter">
+      </form>      
+      <button id="btn-search" class="btn-search-container" type="button">
+        <span class="btn-search-shape"></span>
+      </button>
+      <button id="btn-menu-main" type="button" class="btn-menu-container menu-close">
+        <span class="btn-menu-lines"></span>
+      </button>
+    </header>
+    <div id="content-wrapper">
+      <!-- Main Navigation -->
+      <nav class="menu-main" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <h3 itemprop="headline">{{main_nav_header}}</h3>
+        <ul>
+          <li itemprop="name"><a href="#" itemprop="url">Menu Text 1</a></li>
+          <li itemprop="name"><a href="#" itemprop="url">Menu Text 2</a></li>
+          <li class="selected" itemprop="name"><a href="#" itemprop="url">Menu Text 3</a></li>
+          <li itemprop="name"><a href="#" itemprop="url">Menu Text 4</a></li>
+          <li itemprop="name"><a href="#" itemprop="url">Menu Text 5</a></li>
+          <li itemprop="name"><a href="#" itemprop="url">Menu Text 6</a></li>
+        </ul>
+      </nav>
+      <!-- Main container -->
+      <div id="main-article-list">
+      <main itemprop="mainEntity" itemscope itemtype="http://schema.org/Blog">
+        <section class="post-list"> 
+          <meta itemprop="description" content="{{site_name}}: {{site_title}}">
+          <h3 itemprop="headline" class="post-list-header">{{post_list_header}}</h3>
+          <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" class="post-list-item">
+            <meta itemprop="dateModified" content="2016-03-07T09:20:00+04:00">
+            <meta itemprop="author" content="Bezlikiy">
+            
+            <!-- Заголовок статьи -->
+            <h2 class="i-name" itemprop="headline"><a itemprop="mainEntityOfPage" rel="bookmark" href="#absolute_article_address">{{article_name}}</a></h2>        
+
+            <!-- Вводный текст, краткое описание статьи -->
+            <div class="i-intro" itemprop="articleBody">
+              <!-- Иллюстрация к статье -->
+              <div class="i-illustration" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                <a href="#absolute_article_address"><img itemprop="url image" src="img/valenok-block.jpg" alt="{{article_illustration_text}}"></a>
+                <meta itemprop="width" content="300">
+                <meta itemprop="height" content="225">
+              </div>
+            <p>
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+              Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
+              В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, 
+              используя Lorem Ipsum для распечатки образцов.
+            </p>
+            </div>
+
+            <!-- Дата публикации и количество комментариев -->
+            <p class="i-published">
+              <time itemprop="datePublished" datetime="2016-03-06">06-03-2016</time>
+              <span itemprop="commentCount">25</span>
+            </p>
+
+            <!-- Категория статьи -->
+            <p class="i-category">
+              <!--noindex-->
+              <a rel="nofollow" href="#category"><span itemprop="articleSection">{{article_category}}</span></a>
+              <!--/noindex-->
+            </p>
+
+            <!-- Издатель статьи -->
+            <div class="i-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+              <meta itemprop="name" content="{{site_name}}">
+              <meta itemprop="telephone" content="{{publisher_telephone}}">
+              <meta itemprop="address" content="{{publisher_sity}}">
+              <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <img itemprop="url image" src="img/publisher-logo.png" alt="">
+                <meta itemprop="width" content="420">
+                <meta itemprop="height" content="60">
+              </div>
+            </div>
+          </article>
+          <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" class="post-list-item">
+            <meta itemprop="dateModified" content="2016-03-07T09:20:00+04:00">
+            <meta itemprop="author" content="Bezlikiy">
+            
+            <!-- Заголовок статьи -->
+            <h2 class="i-name" itemprop="headline"><a itemprop="mainEntityOfPage" rel="bookmark" href="#absolute_article_address">{{article_name}}</a></h2>        
+
+            <!-- Вводный текст, краткое описание статьи -->
+            <div class="i-intro" itemprop="articleBody">
+              <!-- Иллюстрация к статье -->
+              <div class="i-illustration" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                <a href="#absolute_article_address"><img itemprop="url image" src="img/valenok-block.jpg" alt="{{article_illustration_text}}"></a>
+                <meta itemprop="width" content="300">
+                <meta itemprop="height" content="225">
+              </div>
+            <p>
+              Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул 
+              в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset 
+              с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной 
+              вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+            </p>
+            </div>
+
+            <!-- Дата публикации и количество комментариев -->
+            <p class="i-published">
+              <time itemprop="datePublished" datetime="2016-03-06">06-03-2016</time>
+              <span itemprop="commentCount">25</span>
+            </p>
+
+            <!-- Категория статьи -->
+            <p class="i-category">
+              <!--noindex-->
+              <a rel="nofollow" href="#category"><span itemprop="articleSection">{{article_category}}</span></a>
+              <!--/noindex-->
+            </p>
+
+            <!-- Издатель статьи -->
+            <div class="i-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+              <meta itemprop="name" content="{{site_name}}">
+              <meta itemprop="telephone" content="{{publisher_telephone}}">
+              <meta itemprop="address" content="{{publisher_sity}}">
+              <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <img itemprop="url image" src="img/publisher-logo.png" alt="">
+                <meta itemprop="width" content="420">
+                <meta itemprop="height" content="60">
+              </div>
+            </div>
+          </article>
+          <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" class="post-list-item">
+            <meta itemprop="dateModified" content="2016-03-07T09:20:00+04:00">
+            <meta itemprop="author" content="Bezlikiy">
+            
+            <!-- Заголовок статьи -->
+            <h2 class="i-name" itemprop="headline"><a itemprop="mainEntityOfPage" rel="bookmark" href="#absolute_article_address">{{article_name}}</a></h2>        
+
+            <!-- Вводный текст, краткое описание статьи -->
+            <div class="i-intro" itemprop="articleBody">
+              <!-- Иллюстрация к статье -->
+              <div class="i-illustration" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                <a href="#absolute_article_address"><img itemprop="url image" src="img/valenok-block.jpg" alt="{{article_illustration_text}}"></a>
+                <meta itemprop="width" content="300">
+                <meta itemprop="height" content="225">
+              </div>
+            <p>
+              Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не 
+              совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть 
+              более двух тысячелетий назад.
+            </p>
+            </div>
+
+            <!-- Дата публикации и количество комментариев -->
+            <p class="i-published">
+              <time itemprop="datePublished" datetime="2016-03-06">06-03-2016</time>
+              <span itemprop="commentCount">25</span>
+            </p>
+
+            <!-- Категория статьи -->
+            <p class="i-category">
+              <!--noindex-->
+              <a rel="nofollow" href="#category"><span itemprop="articleSection">{{article_category}}</span></a>
+              <!--/noindex-->
+            </p>
+
+            <!-- Издатель статьи -->
+            <div class="i-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+              <meta itemprop="name" content="{{site_name}}">
+              <meta itemprop="telephone" content="{{publisher_telephone}}">
+              <meta itemprop="address" content="{{publisher_sity}}">
+              <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <img itemprop="url image" src="img/publisher-logo.png" alt="">
+                <meta itemprop="width" content="420">
+                <meta itemprop="height" content="60">
+              </div>
+            </div>
+          </article>
+          <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" class="post-list-item">
+            <meta itemprop="dateModified" content="2016-03-07T09:20:00+04:00">
+            <meta itemprop="author" content="Bezlikiy">
+            
+            <!-- Заголовок статьи -->
+            <h2 class="i-name" itemprop="headline"><a itemprop="mainEntityOfPage" rel="bookmark" href="#absolute_article_address">{{article_name}}</a></h2>        
+
+            <!-- Вводный текст, краткое описание статьи -->
+            <div class="i-intro" itemprop="articleBody">
+              <!-- Иллюстрация к статье -->
+              <div class="i-illustration" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                <a href="#absolute_article_address"><img itemprop="url image" src="img/valenok-block.jpg" alt="{{article_illustration_text}}"></a>
+                <meta itemprop="width" content="300">
+                <meta itemprop="height" content="225">
+              </div>
+            <p>
+              Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно 
+              из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в 
+              классической латинской литературе.
+            </p>
+            </div>
+
+            <!-- Дата публикации и количество комментариев -->
+            <p class="i-published">
+              <time itemprop="datePublished" datetime="2016-03-06">06-03-2016</time>
+              <span itemprop="commentCount">25</span>
+            </p>
+
+            <!-- Категория статьи -->
+            <p class="i-category">
+              <!--noindex-->
+              <a rel="nofollow" href="#category"><span itemprop="articleSection">{{article_category}}</span></a>
+              <!--/noindex-->
+            </p>
+
+            <!-- Издатель статьи -->
+            <div class="i-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+              <meta itemprop="name" content="{{site_name}}">
+              <meta itemprop="telephone" content="{{publisher_telephone}}">
+              <meta itemprop="address" content="{{publisher_sity}}">
+              <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <img itemprop="url image" src="img/publisher-logo.png" alt="">
+                <meta itemprop="width" content="420">
+                <meta itemprop="height" content="60">
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+      <!-- Пагинация -->
+      <nav class="post-list-pagination">
+        <h3>Ещё статьи</h3>
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li class="selected"><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </nav>
+      </div><!-- #main-article-list -->
+      <aside id="banner-b">
+        <!--noindex-->
+        <h3>Реклама</h3>
+        <p>
+          Banner B
+        </p>
+        <!--/noindex-->
+      </aside>
+      <label for="btn-menu-main"></label>
+    </div><!-- #content-wrapper -->
+    <aside id="banner-a">
+      <!--noindex-->
+      <h3>Реклама</h3>
+      <p>
+        Banner A
+      </p>
+      <!--/noindex-->
+    </aside>
+    <!-- Footer -->
+    <footer class="site-footer full-width-bar" itemscope itemtype="http://schema.org/WPFooter">
+      <p>
+        Copyright &copy; 
+        <span itemprop="copyrightYear">2016</span> 
+        <span itemprop="copyrightHolder">Bezlikiy</span>
+      </p>
+    </footer>
+    </div><!-- #site-wrapper -->
+	</body>
+</html>
