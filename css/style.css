@@ -1013,6 +1013,17 @@ ul.soc li a:hover::after, ul.soc li a:focus::after {
   content: "\f003";
 }
 
+.main-page-intro {
+  padding: 1em;
+  text-align: justify;
+}
+.main-page-intro > :first-child {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.5em;
+  text-align: left;
+}
+
 .post-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1043,9 +1054,6 @@ ul.soc li a:hover::after, ul.soc li a:focus::after {
   padding: 0 .5em .5em;
   margin-bottom: 1em;
   background-color: #FCF9EC;
-}
-.post-list-item:nth-child(3) {
-  margin-top: 1em;
 }
 .post-list-item .i-name {
   position: relative;

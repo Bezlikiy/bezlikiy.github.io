@@ -1,1 +1,83 @@
 ﻿AddDefaultCharset UTF-8
+
+# Включаем кеширование в Cache-Control
+<IfModule mod_headers.c>
+	# Кешировать html на 2 часа с проверкой изменений
+	<FilesMatch "\.(html|htm)$">
+		Header set Cache-Control "max-age=7200, must-revalidate"
+	</FilesMatch>
+
+	# Кешировать JavaScript и CSS на 1 неделю с проверкой изменений
+	# условия |js\.gz|css\.gz устанавливают кеш на предварително сжатые ресурсы
+	<FilesMatch "\.(js|css|js\.gz|css\.gz)$">
+		Header set Cache-Control "max-age=604800, private, must-revalidate"
+	</FilesMatch>
+
+	# Кешировать используемые шрифты на 1 неделю
+	<FilesMatch "\.(ttf|woff|woff2)$">
+		Header set Cache-Control "max-age=604800, public"
+	</FilesMatch>
+
+	# Кешировать изображения на 1 неделю
+	<FilesMatch "\.(jpg|jpeg|png|svg)$">
+		Header set Cache-Control "max-age=604800, public"
+	</FilesMatch>
+</IfModule>
+
+# Если Cache-Control не работает, использовать Expires
+<IfModule !mod_headers.c>
+	<IfModule mod_expires.c>
+		ExpiresActive on
+		# Задаем значение по умолчанию (для всех файлов)
+		ExpiresDefault "access plus 0 seconds"
+
+		# Кешировать JavaScript и CSS на 1 день
+		<FilesMatch "\.(js|css)$">
+			ExpiresDefault "access plus 1 days"
+		</FilesMatch>
+
+		# Кешировать используемые шрифты на 1 неделю
+		<FilesMatch "\.(ttf|woff|woff2)$">
+			ExpiresDefault "access plus 1 weeks"
+		</FilesMatch>
+
+		# Кешировать изображения на 1 неделю
+		<FilesMatch "\.(jpg|jpeg|png|svg)$">
+			ExpiresDefault "access plus 1 weeks"
+		</FilesMatch>
+	</IfModule>
+</IfModule>
+
+# Включаем автоматическое сжатие 
+# для файлов: html, txt, xml, css, javascript
+<IfModule mod_headers.c>
+	AddOutputFilterByType DEFLATE text/html text/plain application/xml text/css text/javascript application/javascript application/x-javascript
+</IfModule>
+
+# Использование предварительно сжатых ресурсов, перенаправление на gzip файлы
+<IfModule mod_headers.c>
+	# включаем mod_rewrite
+	RewriteEngine On
+
+	# Serve gzip compressed CSS files if they exist and the client accepts gzip.  
+  RewriteCond "%{HTTP:Accept-encoding}" "gzip"
+  RewriteCond "%{REQUEST_FILENAME}\.gz" -s
+  RewriteRule "^(.*)\.css" "$1\.css\.gz" [QSA]
+
+  # Serve gzip compressed JS files if they exist and the client accepts gzip.
+  RewriteCond "%{HTTP:Accept-encoding}" "gzip"
+  RewriteCond "%{REQUEST_FILENAME}\.gz" -s
+  RewriteRule "^(.*)\.js" "$1\.js\.gz" [QSA]
+
+  # Serve correct content types, and prevent mod_deflate double gzip.
+  RewriteRule "\.css\.gz$" "-" [T=text/css,E=no-gzip:1]
+  RewriteRule "\.js\.gz$" "-" [T=text/javascript,E=no-gzip:1]
+
+	<FilesMatch "(\.js\.gz|\.css\.gz)$">
+    # Serve correct encoding type.
+    Header append Content-Encoding gzip
+
+    # Force proxies to cache gzipped & non-gzipped css/js files separately.
+    Header append Vary Accept-Encoding
+  </FilesMatch>
+</IfModule>

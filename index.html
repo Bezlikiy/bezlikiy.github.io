@@ -1,24 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{site_title}}</title>
-    <meta name="description" content="{{site_description}}">
-    <link rel="canonical" href="#absolute_page_address">
-    <link rel="apple-touch-icon" sizes="192x192" href="favicon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
-    <style type="text/css">
-      #banner-a,#banner-b,body{background-color:#efecdf}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}#banner-a,#banner-b,#content-wrapper,#site-wrapper{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox}.full-width-bar::before,.post-list-item .i-name::before{right:100%}.header-menu-second>ul li,.menu-main ul li,ol,ul,ul.soc{list-style:none}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}body{line-height:1;overflow-x:hidden;width:100%;color:#1c1c1c;word-wrap:break-word}.header-logo>a,.menu-main ul li a{color:#efecdf;text-decoration:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}body,html{font:medium/1.5em Arial,Helvetica,sans-serif}#banner-a,#banner-b{display:flex;-webkit-flex-flow:column nowrap;-ms-flex-flow:column nowrap;flex-flow:column nowrap;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;margin:0;padding:0}#banner-a>:first-child,#banner-b>:first-child{font-size:.8em;line-height:1em;margin:0;padding:0}#banner-a>:first-child{margin-top:6.25px}#banner-a>:nth-child(2){background-color:maroon;margin-bottom:25px}@media all and (max-width:739px){#banner-a>:nth-child(2){width:300px;height:50px}}@media all and (min-width:740px){#banner-a>:nth-child(2){width:728px;height:90px}}#banner-b>:nth-child(2){background-color:green;margin-bottom:25px}@media all and (max-width:739px){#banner-b>:nth-child(2){width:300px;height:50px}}@media all and (min-width:740px) and (max-width:1239px){#banner-b>:nth-child(2){width:160px;height:600px}}@media all and (min-width:1240px){#banner-b>:nth-child(2){width:300px;height:600px}}@media all and (min-width:740px){#banner-b>:first-child{margin-top:12.5px}#banner-b>:nth-child(2){margin:0 auto 25px}}#site-wrapper{display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;min-height:100vh;max-width:1680px;margin:0 auto}#site-wrapper>*{-webkit-box-ordinal-group:2;-webkit-order:1;-ms-flex-order:1;order:1}#site-wrapper>#banner-a{-webkit-box-ordinal-group:1;-webkit-order:0;-ms-flex-order:0;order:0}main{padding:0;margin:0}#content-wrapper{-webkit-box-flex:1;-webkit-flex:auto;-ms-flex:auto;flex:auto;display:flex;overflow:hidden}#content-wrapper>label{position:relative;z-index:1}#content-wrapper.show>label{background-color:rgba(0,0,0,.6)}@media all and (max-width:739px){#content-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}#content-wrapper>*{-webkit-box-ordinal-group:3;-webkit-order:2;-ms-flex-order:2;order:2}#content-wrapper>:first-child{-webkit-box-ordinal-group:1;-webkit-order:0;-ms-flex-order:0;order:0;max-height:0;-webkit-transition:all .5s cubic-bezier(0,1,0,1);transition:all .5s cubic-bezier(0,1,0,1)}#content-wrapper.show>:first-child{max-height:100em;-webkit-transition:all .5s cubic-bezier(1,0,0,1);transition:all .5s cubic-bezier(1,0,0,1)}#content-wrapper:not(.show)>:first-child{visibility:hidden}#content-wrapper>label{-webkit-box-ordinal-group:2;-webkit-order:1;-ms-flex-order:1;order:1;height:1000em;margin:0 100% -1000em 0;-webkit-transition:all .4s;transition:all .4s}#content-wrapper.show label{margin-right:0}}@media all and (min-width:740px) and (max-width:1239px){#content-wrapper{-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-align-content:flex-start;-ms-flex-line-pack:start;align-content:flex-start}#content-wrapper>label{display:none}#content-wrapper>:first-child{-webkit-box-flex:0;-webkit-flex:0 0 100%;-ms-flex:0 0 100%;flex:0 0 100%}#content-wrapper>:nth-child(2){-webkit-box-flex:1;-webkit-flex:1 0 75%;-ms-flex:1 0 75%;flex:1 0 75%}#content-wrapper>aside{-webkit-box-flex:0;-webkit-flex:0 0 25%;-ms-flex:0 0 25%;flex:0 0 25%;max-width:210px}}@media all and (min-width:1240px){#content-wrapper>label{display:none}#content-wrapper>:not(label){-webkit-box-flex:1;-webkit-flex:1 2 25%;-ms-flex:1 2 25%;flex:1 2 25%;max-width:20em}#content-wrapper>:nth-child(2){-webkit-box-flex:3;-webkit-flex:3 0 50%;-ms-flex:3 0 50%;flex:3 0 50%;max-width:100%}}.resized *{-webkit-transition:all!important;transition:all!important}.menu-main{white-space:nowrap;overflow:hidden;background-color:#1c1c1c}.menu-main>:first-child{overflow:hidden;height:0}.menu-main *{outline:0}.menu-main ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column nowrap;-ms-flex-flow:column nowrap;flex-flow:column nowrap;margin:0;padding:0}@media all and (min-width:740px) and (max-width:1239px){.menu-main ul{-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap}}.menu-main ul li a{display:block;padding:1em}.menu-main ul li a:active,.menu-main ul li a:focus,.menu-main ul li a:hover,.menu-main ul li.selected{background-color:#3f3f3f}@media all and (min-width:1240px){.menu-main{background:0 0}.menu-main ul{background-color:#1c1c1c}}.full-width-bar{position:relative}.full-width-bar::after,.full-width-bar::before{position:absolute;z-index:-1;content:"";bottom:0;height:100%;width:50vw;background-color:#1c1c1c}.full-width-bar::after{left:100%}#site-header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;background-color:#1c1c1c}#site-header>*{-webkit-box-ordinal-group:11;-webkit-order:10;-ms-flex-order:10;order:10}@media all and (max-width:739px){#site-name{-webkit-box-ordinal-group:1;-webkit-order:0;-ms-flex-order:0;order:0}#menu-second{-webkit-box-ordinal-group:2;-webkit-order:1;-ms-flex-order:1;order:1}#menu-social{-webkit-box-ordinal-group:3;-webkit-order:2;-ms-flex-order:2;order:2}#menu-second,#menu-social{width:100%}#site-logo{-webkit-box-flex:1;-webkit-flex:1 1 10%;-ms-flex:1 1 10%;flex:1 1 10%}}@media all and (min-width:740px) and (max-width:1239px){#site-name{-webkit-box-ordinal-group:1;-webkit-order:0;-ms-flex-order:0;order:0}#menu-second{-webkit-box-ordinal-group:2;-webkit-order:1;-ms-flex-order:1;order:1;width:100%}#menu-social{-webkit-box-flex:1;-webkit-flex:auto;-ms-flex:auto;flex:auto}#btn-search{margin-right:.4em}}@media all and (min-width:1240px){#h-part-1,#h-part-2{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox}#site-header{-webkit-flex-flow:row-reverse nowrap;-ms-flex-flow:row-reverse nowrap;flex-flow:row-reverse nowrap}#h-part-1{-webkit-box-flex:1;-webkit-flex:auto;-ms-flex:auto;flex:auto;display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap}#h-part-1>*{-webkit-box-ordinal-group:11;-webkit-order:10;-ms-flex-order:10;order:10}#h-part-1>#banner-a{-webkit-box-ordinal-group:1;-webkit-order:0;-ms-flex-order:0;order:0;width:100%}#h-part-1>#menu-second,#h-part-2>#site-logo{-webkit-box-flex:1;-webkit-flex:auto;-ms-flex:auto;flex:auto}#h-part-1 #btn-search{margin-right:1em}#h-part-2{-webkit-box-flex:1;-webkit-flex:1 0 25%;-ms-flex:1 0 25%;flex:1 0 25%;max-width:20em;display:flex;-webkit-flex-flow:column nowrap;-ms-flex-flow:column nowrap;flex-flow:column nowrap}}@media all and (min-width:740px){#btn-menu-main{display:none}}.header-logo{padding:0}.header-logo>a{background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2OTkgNDQ1Ij48ZyBmaWxsPSIjZWZlY2RmIj48cGF0aCBkPSJNMzk5IDQ0NC41di0xMTRjMCAwLTIuMy03LTgtNi44LTg0IDAuMy04NCAwLjMtODQgMC4zcy00LjUgMi02LjggNi4zQzMwMCA0NDQuOCAzMDAgNDQ1IDMwMCA0NDVIMTc0VjI0OWgtNTcuNWMwIDAtOC44LTQuOC01LjUtMTAuOEMxNjEuNSAxOTkgMzQ0IDU4LjUgMzQ0IDU4LjVzNi4zLTMuMyAxMS4zIDBjMjMyLjggMTgwIDIzMi44IDE4MCAyMzIuOCAxODBzMi44IDcuNS00LjMgOS41Yy01OS4zIDAuNS01OS4zIDAuNS01OS4zIDAuNWwwLjMgMTk1LjNDMzk5IDQ0NC41IDM5OSA0NDQuNSAzOTkgNDQ0LjV6TTYwNC41IDQyOWg3OGMwIDAgMTYuNS02IDE2LjUtMTUuOHMwLTE2My44IDAtMTYzLjgtMS4zLTE2LjUtMjEuOC0xNy4zYy0yMi44LTAuMy0yMi44LTAuMy0yMi44LTAuM3MyLjMtMTMxLTE0NS44LTE5Ny41QzQ5MS41IDI3LjUgNDQ5IDYuMyAzNjIuMyAwYy0yNiAwLjUtMTU2LjMtNC0yNTkgOTRDODAgMTIyLjggNDkuNSAxNTUuOCA0NS44IDIzMS44Yy0yNC44IDAuMy0yOSAwLjMtMjkgMC4zUzIuMyAyMzUuNSAwIDI0OC41Yy0wLjUgNC44IDAgMTY0LjMgMCAxNjQuM3MyIDExLjggMTYuNSAxNi4zYzEyLjUgMC4zIDc3LjggMCA3Ny44IDBsMC4zLTE5NS41YzAgMC0xLjUtMTM1LjggMTYxLTE4Mi44IDE5LTUuOCAxMDctMzUuNSAyMTUuNSA5LjhzMTI4IDEyMi41IDEzMyAxNjFDNjA1IDI1MS4zIDYwNC41IDQyOSA2MDQuNSA0Mjl6Ii8+PC9nPjwvc3ZnPg==") 95% 50% no-repeat;background-size:auto 3em;outline:0;margin:0;padding:1em 6em 1em .5em;display:inline-block;font-weight:700;text-transform:uppercase;text-align:center}@media all and (min-width:1240px){.header-logo{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.header-logo>a{background-size:auto 5em;background-position:bottom;padding:0 2em 5em}}.header-menu-second,.header-name{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;font-weight:700}.header-name{display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;width:100%}.header-name>*{padding:0;margin:0}.header-name>:first-child{width:100%;border-radius:0 0 30px/60px 0;padding:.9em;background-color:#c2ba9a;font-size:1.2em;text-transform:lowercase}.header-name>:first-child>*{display:inline-block;vertical-align:top}.header-name [itemprop=headline]{font-size:1.2em;text-transform:uppercase}.header-name [itemprop=headline]::after{font-family:font-picture!important;content:"\f004";padding-left:.3em}@media all and (max-width:739px){.header-name [itemprop=headline]{font-size:1em}.header-name [itemprop=description]{display:none}}@media all and (max-width:1239px){.header-name>:first-child{-webkit-box-flex:1;-webkit-flex:1 1 50%;-ms-flex:1 1 50%;flex:1 1 50%}}@media all and (min-width:1240px){.header-name>:first-child{width:100%;margin-bottom:.5em}.header-name>#btn-menu-second{display:none}}.header-menu-second{display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap}.header-menu-second>*{padding:0;margin:0}.header-menu-second>:first-child{width:100%;overflow:hidden;height:0}.header-menu-second>ul{margin:0;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.header-menu-second>ul li a{display:block;padding:.75em 1em;color:#c2ba9a;text-decoration:none;outline:0}.header-menu-second>ul li a:active,.header-menu-second>ul li a:focus,.header-menu-second>ul li a:hover,.header-menu-second>ul li.selected a{color:#efecdf;border-color:#efecdf;background-color:#3f3f3f}@media all and (max-width:1239px){.header-menu-second>ul{width:100%;overflow:hidden;max-height:0;-webkit-transition:all .5s cubic-bezier(0,1,0,1);transition:all .5s cubic-bezier(0,1,0,1);-webkit-flex-flow:column nowrap;-ms-flex-flow:column nowrap;flex-flow:column nowrap}.header-menu-second:not(.show)>ul{visibility:hidden}.header-menu-second.show>ul{max-height:100em;-webkit-transition:all .5s cubic-bezier(1,0,0,1);transition:all .5s cubic-bezier(1,0,0,1)}}@media all and (min-width:1240px){.header-menu-second>ul{-webkit-box-flex:1;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap}.header-menu-second>ul li a{padding:.75em 1.75em;border-left:.5em solid #c2ba9a}}form.header-menu-search{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;overflow:hidden;font-size:1em}form.header-menu-search:not(.show){visibility:hidden}form.header-menu-search>*{font-size:1em;outline:0;border:none;margin:0;padding:.5em .3em}form.header-menu-search>[type=submit]{-webkit-box-flex:0;-webkit-flex:none;-ms-flex:none;flex:none;cursor:pointer;font-weight:700;border-right:.2em solid #d98d2d;background-color:#d0c9ae}form.header-menu-search>[type=submit]:focus,form.header-menu-search>[type=submit]:hover{background-color:#efecdf}form.header-menu-search>[type=search]{-webkit-box-flex:1;-webkit-flex:auto;-ms-flex:auto;flex:auto;background-color:#efecdf}form.header-menu-search+button{font-size:1em}@media all and (max-width:739px),all and (min-width:1240px){form.header-menu-search{width:100%;-webkit-box-ordinal-group:12!important;-webkit-order:11!important;-ms-flex-order:11!important;order:11!important;max-height:0;-webkit-transition:all .5s cubic-bezier(0,1,0,1);transition:all .5s cubic-bezier(0,1,0,1)}form.header-menu-search.show{max-height:100em;-webkit-transition:all .5s cubic-bezier(1,0,0,1);transition:all .5s cubic-bezier(1,0,0,1)}}.btn-menu-lines,.btn-menu-lines:after,.btn-menu-lines:before{width:3.5em;height:.58333em;border-radius:.29167em;background-color:#c2ba9a}@media all and (min-width:740px) and (max-width:1239px){form.header-menu-search{-webkit-box-flex:20;-webkit-flex:20 0 10%;-ms-flex:20 0 10%;flex:20 0 10%;max-width:0;-webkit-transition:all .5s;transition:all .5s}form.header-menu-search.show{max-width:100%}}.btn-menu-lines{position:relative;display:inline-block;-webkit-transition:all .5s;transition:all .5s}.btn-menu-lines:after,.btn-menu-lines:before{-webkit-transition:all .5s;transition:all .5s;content:"";left:0;position:absolute}.btn-menu-lines:before{top:-1em}.btn-menu-lines:after{top:1em}.btn-menu-container{padding:1.4em .4375em;border:none;background:0 0;-webkit-transition:all .25s;transition:all .25s}.btn-menu-container.close{-webkit-transform:scale3d(.8,.8,.8);transform:scale3d(.8,.8,.8)}.btn-menu-container.close .btn-menu-lines,.btn-menu-container.close .btn-menu-lines:after,.btn-menu-container.close .btn-menu-lines:before,.btn-menu-container:focus .btn-menu-lines,.btn-menu-container:focus .btn-menu-lines:after,.btn-menu-container:focus .btn-menu-lines:before,.btn-menu-container:hover .btn-menu-lines,.btn-menu-container:hover .btn-menu-lines:after,.btn-menu-container:hover .btn-menu-lines:before{background-color:#efecdf}.btn-menu-container.menu-close .btn-menu-lines{-webkit-transition:background .25s 125ms ease;transition:background .25s 125ms ease}.btn-menu-container.menu-close .btn-menu-lines:after,.btn-menu-container.menu-close .btn-menu-lines:before{-webkit-transition:top .25s .25s ease,background .25s 125ms ease,-webkit-transform .25s;transition:top .25s .25s ease,background .25s 125ms ease,-webkit-transform .25s;transition:top .25s .25s ease,transform .25s,background .25s 125ms ease;transition:top .25s .25s ease,transform .25s,background .25s 125ms ease,-webkit-transform .25s}.btn-menu-container.menu-close.close .btn-menu-lines{background:0 0}.btn-menu-container.menu-close.close .btn-menu-lines:after,.btn-menu-container.menu-close.close .btn-menu-lines:before{top:0;-webkit-transition:top .25s,background .25s 125ms ease,-webkit-transform .25s .25s ease;transition:top .25s,background .25s 125ms ease,-webkit-transform .25s .25s ease;transition:top .25s,transform .25s .25s ease,background .25s 125ms ease;transition:top .25s,transform .25s .25s ease,background .25s 125ms ease,-webkit-transform .25s .25s ease}.btn-menu-container.menu-close.close .btn-menu-lines:before{-webkit-transform:rotate3d(0,0,1,-45deg);transform:rotate3d(0,0,1,-45deg)}.btn-menu-container.menu-close.close .btn-menu-lines:after{-webkit-transform:rotate3d(0,0,1,45deg);transform:rotate3d(0,0,1,45deg)}.btn-search-shape{display:inline-block;position:relative;width:1.46667em;height:1.46667em;border:.26667em solid #c2ba9a;border-radius:50%;margin:0 0 .4em .4em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transition:all .25s .25s ease,border-color .25s;transition:all .25s .25s ease,border-color .25s}.btn-search-shape::after,.btn-search-shape::before{display:inline-block;position:absolute;content:"";width:1em;height:.4em;border-radius:.13333em;background-color:#c2ba9a;left:-1.08889em;top:.53333em;-webkit-transition:all .25s .25s ease,background-color .25s,-webkit-transform .25s;transition:all .25s .25s ease,background-color .25s,-webkit-transform .25s;transition:all .25s .25s ease,transform .25s,background-color .25s;transition:all .25s .25s ease,transform .25s,background-color .25s,-webkit-transform .25s}.close .btn-search-shape{margin:0;border-color:transparent;-webkit-transition:all .25s,border-color .25s .25s ease;transition:all .25s,border-color .25s .25s ease}.close .btn-search-shape::after,.close .btn-search-shape::before{left:-.26667em;width:2em;border-radius:.2em;background-color:#efecdf;-webkit-transition:all .25s,background-color .25s .25s ease,-webkit-transform .25s .25s ease;transition:all .25s,background-color .25s .25s ease,-webkit-transform .25s .25s ease;transition:all .25s,transform .25s .25s ease,background-color .25s .25s ease;transition:all .25s,transform .25s .25s ease,background-color .25s .25s ease,-webkit-transform .25s .25s ease}.close .btn-search-shape::after{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.btn-search-container{border:none;background:0 0;overflow:hidden;padding:0 .25em}.btn-search-container:focus:not(.close) .btn-search-shape,.btn-search-container:hover:not(.close) .btn-search-shape{border-color:#efecdf}.header-menu-social{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}@media all and (max-width:1239px){.header-menu-social{padding-left:1em}}@media all and (min-width:1240px){.header-menu-social{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}}ul.soc{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;margin:0;padding:0}ul.soc li{-webkit-box-flex:0;-webkit-flex:none;-ms-flex:none;flex:none}ul.soc li:not(:last-child){margin-right:.3rem}ul.soc li a{display:block;position:relative;overflow:hidden;font:normal 400 1.65rem/3rem font-picture!important;color:#1c1c1c;text-decoration:none;text-align:center;width:3rem;height:3rem;-webkit-transition:all .2s;transition:all .2s}ul.soc li a::after{position:absolute;left:0;bottom:0;opacity:.3;content:"";width:100%;height:0;background-color:#000;-webkit-transition:all .2s;transition:all .2s}ul.soc li a:focus,ul.soc li a:hover{color:#efecdf;line-height:2.25rem!important}ul.soc li a:focus::after,ul.soc li a:hover::after{height:.5rem}.soc-rss{background-color:#f26522}.soc-rss::before{content:"\f000"}.soc-vk{background-color:#45668e}.soc-vk::before{content:"\f001"}.soc-google{background-color:#dc4e41}.soc-google::before{content:"\f002"}.soc-youtube{background-color:#cd201f}.soc-youtube::before{content:"\f003"}.post-list{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:.5em}.post-list>:not(.post-list-item){width:100%}.post-list .post-list-header{display:none}.post-list-item{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;overflow:hidden;padding:0 .5em .5em;margin-bottom:1em;background-color:#FCF9EC}.post-list-item:nth-child(3){margin-top:1em}.post-list-item .i-name{position:relative;background-color:#d0c9ae;font-size:1.5em;font-weight:700}.post-list-item .i-name::after,.post-list-item .i-name::before{position:absolute;z-index:1;content:"";bottom:0;height:100%;width:50vw;background-color:#1c1c1c}.post-list-item .i-name::after{left:100%}.post-list-item .i-name a{display:block;padding:.25em .5em;text-decoration:none;-webkit-transition:all .2s;transition:all .2s;color:#1c1c1c;background-color:#d0c9ae}.post-list-item .i-name a:active,.post-list-item .i-name a:focus,.post-list-item .i-name a:hover{color:#efecdf;background-color:#1c1c1c}.post-list-item .i-illustration{display:block}.post-list-item .i-illustration img,.post-list-item .i-illustration>:first-child{display:block;width:100%}.post-list-item .i-published>:first-child::before,.post-list-item .i-published>:last-child::before{font-family:font-picture!important;margin:0 .2em 0 0}.post-list-item .i-published>:first-child::before{content:"\f005"}.post-list-item .i-published>:last-child::before{content:"\f006"}.post-list-item .i-category a{text-decoration:none;color:#3f3f3f}.post-list-item .i-category a:active,.post-list-item .i-category a:focus,.post-list-item .i-category a:hover{text-decoration:underline;color:#1c1c1c}.post-list-item .i-category::before{font-family:font-picture!important;content:"\f007"}.post-list-item .i-category>*,.post-list-item .i-published>*{font-size:.9em;font-weight:500}.post-list-item .i-publisher{display:none}@media all and (max-width:739px){.post-list-item{-webkit-flex-flow:column nowrap;-ms-flex-flow:column nowrap;flex-flow:column nowrap;max-width:450px}.post-list-item .i-name{font-size:1.2em}.post-list-item .i-illustration{max-width:300px;margin:0 auto}.post-list-item .i-published>:last-child{margin:0 0 0 2em}}@media all and (min-width:740px){.post-list-item{-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap}.post-list-item .i-name{-webkit-box-flex:0;-webkit-flex:0 0 100%;-ms-flex:0 0 100%;flex:0 0 100%}.post-list-item .i-published>:last-child{float:right}.post-list-item .i-category{-webkit-box-flex:1;-webkit-flex:auto;-ms-flex:auto;flex:auto;padding-left:1em}.post-list-item .i-illustration{float:left;margin-right:1em}.post-list-item .i-illustration,.post-list-item .i-published{width:300px;max-width:50%}}#main-article{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column nowrap;-ms-flex-flow:column nowrap;flex-flow:column nowrap}#main-article>:first-child{margin:.5em .5em 0}#main-article>:nth-child(2){margin:0 .5em .5em}nav.i-breadcrumb{width:100%;line-height:1em;font-size:.85em}nav.i-breadcrumb>:first-child{display:none}nav.i-breadcrumb ul{display:inline-block;padding:0;margin:0;color:#3f3f3f}nav.i-breadcrumb ul li{display:inline-block;float:left}nav.i-breadcrumb ul li:not(:last-child)::after{font-family:font-picture!important;content:"\f010"}nav.i-breadcrumb ul li a{display:inline-block;padding:0 .25em .5em;color:#3f3f3f;text-decoration:none}nav.i-breadcrumb ul li a:focus,nav.i-breadcrumb ul li a:hover{text-decoration:underline}.post-article{padding:.5em;background-color:#FCF9EC}.post-article .ad-underline{border-bottom:.2em groove #d0c9ae;margin:0 0 .5em}.post-article .i-header{width:100%}.post-article .i-header>:first-child{font:500 2em/1em Georgia,'Times New Roman',Times,serif;margin:0 0 .25em}@media all and (max-width:739px){.post-article .i-header>:first-child{font-size:1.5em}}.post-article .i-header .i-publish-info{width:100%;padding:.25em 0;font-weight:500;font-size:.85em}.post-article .i-header .i-publish-info>*{margin:0 1em 0 0}.post-article .i-header .i-publish-info>::before{font-size:1.3em}.post-article .i-header .i-publish-info>:first-child::before{content:"\f005"}.post-article .i-header .i-publish-info>:nth-child(2)::before{content:"\f011"}.post-article .i-header .i-publish-info .i-category::before{content:"\f007"}.post-article .i-header .i-publisher{display:none}.post-article .i-illustration{display:block;text-align:center}.post-article .i-illustration img,.post-article .i-illustration>:first-child{display:inline-block;max-width:100%}.post-article .i-content{text-align:justify;padding-bottom:1em}.post-article .i-comment-list>:first-child{color:inherit;font-size:1.2em;font-weight:500;margin-bottom:.5em}.post-article .i-comment-list>:first-child::before{content:"\f006"}.post-article .i-comment-list .i-comment{padding:.5em}.post-article .i-comment-list .i-comment:not(:last-child){margin-bottom:1em}.post-article .i-comment-list .i-comment>:first-child{font-size:1.2em;font-weight:500}.post-article .i-comment-list .i-comment>:first-child::before{font-size:1.2em;content:"\f012"}.post-article .i-comment-list .i-comment>:nth-child(2){text-align:justify}.post-article .i-comment-list .i-comment>:last-child{display:block;font-size:.85em}.post-article .i-comment-list .i-comment>:last-child .i-pic-text{margin:.3em 1em 0 0}.post-article .i-comment-list .i-comment:nth-child(even){background-color:#efecdf}form.add-comment{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding:0 .5em;margin:.5em .5em 3em}form.add-comment>*{-webkit-box-flex:1;-webkit-flex:1 1 100%;-ms-flex:1 1 100%;flex:1 1 100%;font:inherit;border:none;border-radius:.5em;background-color:#FCF9EC;padding:.5em;margin-bottom:.5em}.fp,.i-pic-text::before{font-family:font-picture!important}form.add-comment>:first-child{font-size:1.2em;font-weight:500;border-radius:0;background-color:inherit;margin:0}form.add-comment>:first-child::before{font-size:1.2em;content:"\f013"}form.add-comment>[type=text]{-webkit-box-flex:1;-webkit-flex:auto;-ms-flex:auto;flex:auto;margin-right:.5em}@media all and (max-width:739px){form.add-comment>[type=text]{margin-right:0;width:100%}}form.add-comment>[type=email]{-webkit-box-flex:1;-webkit-flex:auto;-ms-flex:auto;flex:auto}form.add-comment textarea{resize:vertical}form.add-comment>:last-child{-webkit-box-flex:0;-webkit-flex:none;-ms-flex:none;flex:none;padding:.5em 2em}.i-pic-text{color:#3f3f3f;display:inline-block}.i-pic-text a{text-decoration:none;color:#3f3f3f}.i-pic-text a:active,.i-pic-text a:focus,.i-pic-text a:hover{text-decoration:underline;color:#1c1c1c}.i-pic-text::before{float:left;margin:0 .3em 0 0}nav.post-list-pagination{width:100%;text-align:center;margin:0 0 1em}nav.post-list-pagination>:first-child{display:none}nav.post-list-pagination ul{display:inline-block;padding:0;margin:0;font-weight:700}nav.post-list-pagination ul li{display:inline}nav.post-list-pagination ul li a{float:left;padding:.5em 1em;color:#1c1c1c;text-decoration:none}nav.post-list-pagination ul li a:active,nav.post-list-pagination ul li a:focus,nav.post-list-pagination ul li a:hover{color:#efecdf;background-color:#3f3f3f}nav.post-list-pagination ul li.selected a{color:#efecdf;background-color:#1c1c1c}nav.post-list-pagination ul li:first-child a::before,nav.post-list-pagination ul li:last-child a::after{font-family:font-picture!important;font-weight:400}nav.post-list-pagination ul li:first-child a::before{content:"\f008"}nav.post-list-pagination ul li:last-child a::after{content:"\f009"}.site-footer{padding:.5em 1em;color:#d0c9ae;background-color:#1c1c1c}@font-face{font-family:font-picture;src:url(../fonts/font-picture.woff2) format("woff2"),url(../fonts/font-picture.woff) format("woff"),url(../fonts/font-picture.ttf) format("truetype");font-weight:400;font-style:normal}
-    </style>
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-    <![endif]-->
-    <script type="text/javascript">
-      var MYAPP={};MYAPP.header=(function(){'use strict';function defineMenuBtn(b,c,d){var e=document.getElementById(b);e.onclick=function(){var a=document.getElementById(c);a.classList.toggle(d)}}function defineMenuBtnEx(b,c){var d=document.getElementById(b.id);d.onclick=function(){var a=document.getElementById(c.id);d.classList.toggle(b.class);a.classList.toggle(c.class)}}function ResizeClass(a,b,c){var d=a.classList;var e;var f;function onTime(){if(e){e=false}else{d.remove(b);clearInterval(f);f=null}}this.resize=function(){e=true;d.add(b);if(!f){f=setInterval(onTime,c)}}}function MoveElemBase(){this._moveList=[]}MoveElemBase.prototype._addToMoveList=function(a){this._moveList.push({node:a,parent:a.parentNode,next:a.nextSibling})};MoveElemBase.prototype.restore=function(){var a=this._moveList;for(var i=0;i<a.length;i++){var b=a[i];b.parent.appendChild(b.node)}while(a.length>0){var b=a.pop();b.parent.insertBefore(b.node,b.next)}};function MoveElements(){MoveElemBase.call(this)}MoveElements.prototype=Object.create(MoveElemBase.prototype);MoveElements.prototype.constructor=MoveElements;MoveElements.prototype.move=function(a,b,c){var d=document.getElementById(b);if(d){var e=null;if(c)e=document.getElementById(c);for(var i=0;i<a.length;i++){var f=document.getElementById(a[i]);if(f.parentNode!==d){MoveElemBase.prototype._addToMoveList.call(this,f);d.insertBefore(f,e)}}}};function InsertContainers(c,d){function createBlock(a){var b=document.createElement(a.element);b.id=a.id;b.className=a.className;b.teg=a;return b}MoveElemBase.call(this);this._blockParent=document.getElementById(d);this._blockList=[];for(var i=0;i<c.length;i++){this._blockList.push(createBlock(c[i]))}}InsertContainers.prototype=Object.create(MoveElemBase.prototype);InsertContainers.prototype.constructor=InsertContainers;InsertContainers.prototype.move=function(c,d){function getBlockByID(a,b){for(var i=0;i<b.length;i++)if(b[i].id===a)return b[i]}var e=getBlockByID(c,this._blockList);if(e&&!e.parentNode){for(var i=0;i<d.length;i++){var f=document.getElementById(d[i]);MoveElemBase.prototype._addToMoveList.call(this,f);e.appendChild(f)}this._blockParent.appendChild(e)}};InsertContainers.prototype.restore=function(){var a=this._blockList;for(var i=0;i<a.length;i++){var b=a[i].parentNode;if(b)b.removeChild(a[i])}MoveElemBase.prototype.restore.apply(this,arguments)};function WidthChangeController(a,b){function doResize(){a(b)}this.change=doResize;window.addEventListener("resize",doResize)}function SiteHeader(){var b=1240;var c;var d;var e;var f;function DoResize(a){c.resize();if(window.innerWidth>=b){if(a.current!==a.larger){a.current=a.larger;d.move("h-part-1",["site-name","menu-second","btn-menu-main","banner-a"]);d.move("h-part-2",["menu-social","site-logo"]);e.move(['form-search','btn-search'],'menu-second')}}else{if(a.current!==a.less){a.current=a.less;e.restore();d.restore()}}}this.init=function(){if(!c){c=new ResizeClass(document.body,"resized",100);e=new MoveElements();var a=[{element:"div",id:"h-part-1",className:"h-part-1 someClass"},{element:"div",id:"h-part-2",className:"h-part-2 someClass"}];d=new InsertContainers(a,"site-header");f=new WidthChangeController(DoResize,{current:0,larger:1,less:2});f.change();defineMenuBtnEx({id:"btn-menu-main",class:"close"},{id:"content-wrapper",class:"show"});defineMenuBtnEx({id:"btn-menu-second",class:"close"},{id:"menu-second",class:"show"});defineMenuBtnEx({id:"btn-search",class:"close"},{id:"form-search",class:"show"})}}}var g=new SiteHeader();return{init:g.init,constructor_MoveElements:MoveElements,defineMenuBtn:defineMenuBtn,defineMenuBtnEx:defineMenuBtnEx}})();document.addEventListener("DOMContentLoaded",function(){MYAPP.header.init()});
-    </script>
-
-    <script type="application/ld+json">
+<html lang=ru>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<title>{{site_title}}</title>
+<meta name=description content={{site_description}}>
+<link rel=canonical href=#absolute_page_address>
+<link rel=apple-touch-icon sizes=192x192 href=favicon.png>
+<link rel=icon type=image/png sizes=192x192 href=favicon.png>
+<link rel=stylesheet type=text/css href=css/style.min.css>
+<!--[if lt IE 9]>
+<script src=js/html5shiv.min.js></script>
+<![endif]-->
+<script src=js/uheader.min.js></script>
+<script type=application/ld+json>
     {
       "@context": "http://schema.org",
       "@type": "WebSite",
@@ -26,316 +21,295 @@
       "url": "#{{absolute_page_address}}"
     }
     </script>
-	</head>
-	<body>
-		<div id="site-wrapper" itemscope itemtype="http://schema.org/WebPage">
-    <meta itemprop="name" content="{{site_name}}">
-    <meta itemprop="description" content="{{site_description}}">
-
-    <!-- Header with Banner -->
-    <header id="site-header" itemscope itemtype="http://schema.org/WPHeader">
-      <div id="site-name" class="header-name full-width-bar">
-        <div>
-          <h1 itemprop="headline">{{site_name}}</h1>
-          <p itemprop="description">{{site_name_description}}</p>
-        </div>
-        <button id="btn-menu-second" class="btn-menu-container menu-close" type="button">
-          <span class="btn-menu-lines"></span>
-        </button>
-      </div>
-      <div id="site-logo" class="header-logo">
-        <a href="#">{{logo-text}}</a>
-      </div>
-      <!-- Second navigation block -->
-      <nav id="menu-second" class="header-menu-second full-width-bar">
-        <h3>Вспомогательная навигация</h3>
-        <ul>
-          <li class="selected"><a href="#">Menu Text 1</a></li>
-          <li><a href="#">Menu Text 2</a></li>
-          <li><a href="#">Menu Text 3</a></li>
-        </ul>
-      </nav>
-      <div id="menu-social" class="header-menu-social">
-        <!--noindex-->
-        <ul class="soc">
-          <li><a rel="nofollow" class="soc-vk" href="#"></a></li>
-          <li><a rel="nofollow" class="soc-google" href="#"></a></li>
-          <li><a rel="nofollow" class="soc-youtube" href="#"></a></li>
-          <li><a rel="nofollow" class="soc-rss" href="#"></a></li>
-        </ul>
-        <!--/noindex-->
-      </div>
-      <form id="form-search" class="header-menu-search" role="search">
-        <input type="submit" value="Искать">
-        <input type="search" required placeholder="Для поиска нажать Enter">
-      </form>      
-      <button id="btn-search" class="btn-search-container" type="button">
-        <span class="btn-search-shape"></span>
-      </button>
-      <button id="btn-menu-main" type="button" class="btn-menu-container menu-close">
-        <span class="btn-menu-lines"></span>
-      </button>
-    </header>
-    <div id="content-wrapper">
-      <!-- Main Navigation -->
-      <nav class="menu-main" itemscope itemtype="http://schema.org/SiteNavigationElement">
-        <h3 itemprop="headline">{{main_nav_header}}</h3>
-        <ul>
-          <li itemprop="name"><a href="#" itemprop="url">Menu Text 1</a></li>
-          <li itemprop="name"><a href="#" itemprop="url">Menu Text 2</a></li>
-          <li class="selected" itemprop="name"><a href="#" itemprop="url">Menu Text 3</a></li>
-          <li itemprop="name"><a href="#" itemprop="url">Menu Text 4</a></li>
-          <li itemprop="name"><a href="#" itemprop="url">Menu Text 5</a></li>
-          <li itemprop="name"><a href="#" itemprop="url">Menu Text 6</a></li>
-        </ul>
-      </nav>
-      <!-- Main container -->
-      <div id="main-article-list">
-      <main itemprop="mainEntity" itemscope itemtype="http://schema.org/Blog">
-        <article>
-          <h2>Сайт о {{site_title}}</h2>
-          <p>
-            Разнообразный и богатый опыт сложившаяся структура организации позволяет выполнять важные задания по разработке дальнейших направлений развития. С другой стороны дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.
-          </p>
-          <p>
-            Таким образом постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации новых предложений. Равным образом реализация намеченных плановых заданий позволяет выполнять важные задания по разработке соответствующий условий активизации.
-          </p>
-        </article>
-        <section class="post-list"> 
-          <meta itemprop="description" content="{{site_name}}: {{site_title}}">
-          <h3 itemprop="headline" class="post-list-header">{{post_list_header}}</h3>
-          <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" class="post-list-item">
-            <meta itemprop="dateModified" content="2016-03-07T09:20:00+04:00">
-            <meta itemprop="author" content="Bezlikiy">
-            
-            <!-- Заголовок статьи -->
-            <h2 class="i-name" itemprop="headline"><a itemprop="mainEntityOfPage" rel="bookmark" href="#absolute_article_address">{{article_name}}</a></h2>        
-
-            <!-- Вводный текст, краткое описание статьи -->
-            <div class="i-intro" itemprop="articleBody">
-              <!-- Иллюстрация к статье -->
-              <div class="i-illustration" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                <a href="#absolute_article_address"><img itemprop="url image" src="img/valenok-block.jpg" alt="{{article_illustration_text}}"></a>
-                <meta itemprop="width" content="300">
-                <meta itemprop="height" content="225">
-              </div>
-            <p>
-              Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
-              Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
-              В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, 
-              используя Lorem Ipsum для распечатки образцов.
-            </p>
-            </div>
-
-            <!-- Дата публикации и количество комментариев -->
-            <p class="i-published">
-              <time itemprop="datePublished" datetime="2016-03-06">06-03-2016</time>
-              <span itemprop="commentCount">25</span>
-            </p>
-
-            <!-- Категория статьи -->
-            <p class="i-category">
-              <!--noindex-->
-              <a rel="nofollow" href="#category"><span itemprop="articleSection">{{article_category}}</span></a>
-              <!--/noindex-->
-            </p>
-
-            <!-- Издатель статьи -->
-            <div class="i-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-              <meta itemprop="name" content="{{site_name}}">
-              <meta itemprop="telephone" content="{{publisher_telephone}}">
-              <meta itemprop="address" content="{{publisher_sity}}">
-              <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-                <img itemprop="url image" src="img/publisher-logo.png" alt="">
-                <meta itemprop="width" content="420">
-                <meta itemprop="height" content="60">
-              </div>
-            </div>
-          </article>
-          <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" class="post-list-item">
-            <meta itemprop="dateModified" content="2016-03-07T09:20:00+04:00">
-            <meta itemprop="author" content="Bezlikiy">
-            
-            <!-- Заголовок статьи -->
-            <h2 class="i-name" itemprop="headline"><a itemprop="mainEntityOfPage" rel="bookmark" href="#absolute_article_address">{{article_name}}</a></h2>        
-
-            <!-- Вводный текст, краткое описание статьи -->
-            <div class="i-intro" itemprop="articleBody">
-              <!-- Иллюстрация к статье -->
-              <div class="i-illustration" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                <a href="#absolute_article_address"><img itemprop="url image" src="img/valenok-block.jpg" alt="{{article_illustration_text}}"></a>
-                <meta itemprop="width" content="300">
-                <meta itemprop="height" content="225">
-              </div>
-            <p>
-              Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул 
-              в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset 
-              с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной 
-              вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-            </p>
-            </div>
-
-            <!-- Дата публикации и количество комментариев -->
-            <p class="i-published">
-              <time itemprop="datePublished" datetime="2016-03-06">06-03-2016</time>
-              <span itemprop="commentCount">25</span>
-            </p>
-
-            <!-- Категория статьи -->
-            <p class="i-category">
-              <!--noindex-->
-              <a rel="nofollow" href="#category"><span itemprop="articleSection">{{article_category}}</span></a>
-              <!--/noindex-->
-            </p>
-
-            <!-- Издатель статьи -->
-            <div class="i-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-              <meta itemprop="name" content="{{site_name}}">
-              <meta itemprop="telephone" content="{{publisher_telephone}}">
-              <meta itemprop="address" content="{{publisher_sity}}">
-              <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-                <img itemprop="url image" src="img/publisher-logo.png" alt="">
-                <meta itemprop="width" content="420">
-                <meta itemprop="height" content="60">
-              </div>
-            </div>
-          </article>
-          <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" class="post-list-item">
-            <meta itemprop="dateModified" content="2016-03-07T09:20:00+04:00">
-            <meta itemprop="author" content="Bezlikiy">
-            
-            <!-- Заголовок статьи -->
-            <h2 class="i-name" itemprop="headline"><a itemprop="mainEntityOfPage" rel="bookmark" href="#absolute_article_address">{{article_name}}</a></h2>        
-
-            <!-- Вводный текст, краткое описание статьи -->
-            <div class="i-intro" itemprop="articleBody">
-              <!-- Иллюстрация к статье -->
-              <div class="i-illustration" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                <a href="#absolute_article_address"><img itemprop="url image" src="img/valenok-block.jpg" alt="{{article_illustration_text}}"></a>
-                <meta itemprop="width" content="300">
-                <meta itemprop="height" content="225">
-              </div>
-            <p>
-              Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не 
-              совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть 
-              более двух тысячелетий назад.
-            </p>
-            </div>
-
-            <!-- Дата публикации и количество комментариев -->
-            <p class="i-published">
-              <time itemprop="datePublished" datetime="2016-03-06">06-03-2016</time>
-              <span itemprop="commentCount">25</span>
-            </p>
-
-            <!-- Категория статьи -->
-            <p class="i-category">
-              <!--noindex-->
-              <a rel="nofollow" href="#category"><span itemprop="articleSection">{{article_category}}</span></a>
-              <!--/noindex-->
-            </p>
-
-            <!-- Издатель статьи -->
-            <div class="i-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-              <meta itemprop="name" content="{{site_name}}">
-              <meta itemprop="telephone" content="{{publisher_telephone}}">
-              <meta itemprop="address" content="{{publisher_sity}}">
-              <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-                <img itemprop="url image" src="img/publisher-logo.png" alt="">
-                <meta itemprop="width" content="420">
-                <meta itemprop="height" content="60">
-              </div>
-            </div>
-          </article>
-          <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" class="post-list-item">
-            <meta itemprop="dateModified" content="2016-03-07T09:20:00+04:00">
-            <meta itemprop="author" content="Bezlikiy">
-            
-            <!-- Заголовок статьи -->
-            <h2 class="i-name" itemprop="headline"><a itemprop="mainEntityOfPage" rel="bookmark" href="#absolute_article_address">{{article_name}}</a></h2>        
-
-            <!-- Вводный текст, краткое описание статьи -->
-            <div class="i-intro" itemprop="articleBody">
-              <!-- Иллюстрация к статье -->
-              <div class="i-illustration" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                <a href="#absolute_article_address"><img itemprop="url image" src="img/valenok-block.jpg" alt="{{article_illustration_text}}"></a>
-                <meta itemprop="width" content="300">
-                <meta itemprop="height" content="225">
-              </div>
-            <p>
-              Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно 
-              из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в 
-              классической латинской литературе.
-            </p>
-            </div>
-
-            <!-- Дата публикации и количество комментариев -->
-            <p class="i-published">
-              <time itemprop="datePublished" datetime="2016-03-06">06-03-2016</time>
-              <span itemprop="commentCount">25</span>
-            </p>
-
-            <!-- Категория статьи -->
-            <p class="i-category">
-              <!--noindex-->
-              <a rel="nofollow" href="#category"><span itemprop="articleSection">{{article_category}}</span></a>
-              <!--/noindex-->
-            </p>
-
-            <!-- Издатель статьи -->
-            <div class="i-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-              <meta itemprop="name" content="{{site_name}}">
-              <meta itemprop="telephone" content="{{publisher_telephone}}">
-              <meta itemprop="address" content="{{publisher_sity}}">
-              <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-                <img itemprop="url image" src="img/publisher-logo.png" alt="">
-                <meta itemprop="width" content="420">
-                <meta itemprop="height" content="60">
-              </div>
-            </div>
-          </article>
-        </section>
-      </main>
-      <!-- Пагинация -->
-      <nav class="post-list-pagination">
-        <h3>Ещё статьи</h3>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li class="selected"><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </nav>
-      </div><!-- #main-article-list -->
-      <aside id="banner-b">
-        <!--noindex-->
-        <h3>Реклама</h3>
-        <p>
-          Banner B
-        </p>
-        <!--/noindex-->
-      </aside>
-      <label for="btn-menu-main"></label>
-    </div><!-- #content-wrapper -->
-    <aside id="banner-a">
-      <!--noindex-->
-      <h3>Реклама</h3>
-      <p>
-        Banner A
-      </p>
-      <!--/noindex-->
-    </aside>
-    <!-- Footer -->
-    <footer class="site-footer full-width-bar" itemscope itemtype="http://schema.org/WPFooter">
-      <p>
-        Copyright &copy; 
-        <span itemprop="copyrightYear">2016</span> 
-        <span itemprop="copyrightHolder">Bezlikiy</span>
-      </p>
-    </footer>
-    </div><!-- #site-wrapper -->
-	</body>
+</head>
+<body>
+<div id=site-wrapper itemscope itemtype=http://schema.org/WebPage>
+<meta itemprop=name content={{site_name}}>
+<meta itemprop=description content={{site_description}}>
+<!-- Header with Banner -->
+<header id=site-header itemscope itemtype=http://schema.org/WPHeader>
+<div id=site-name class="header-name full-width-bar">
+<div>
+<h1 itemprop=headline>{{site_name}}</h1>
+<p itemprop=description>{{site_name_description}}</p>
+</div>
+<button id=btn-menu-second class="btn-menu-container menu-close" type=button>
+<span class=btn-menu-lines></span>
+</button>
+</div>
+<div id=site-logo class=header-logo>
+<a href=#>{{logo-text}}</a>
+</div>
+<!-- Second navigation block -->
+<nav id=menu-second class="header-menu-second full-width-bar">
+<h3>Вспомогательная навигация</h3>
+<ul>
+<li class=selected><a href=/index-article-single.html>Menu Text 1</a></li>
+<li><a href=#>Menu Text 2</a></li>
+<li><a href=#>Menu Text 3</a></li>
+</ul>
+</nav>
+<div id=menu-social class=header-menu-social>
+<!--noindex-->
+<ul class=soc>
+<li><a rel=nofollow class=soc-vk href=#></a></li>
+<li><a rel=nofollow class=soc-google href=#></a></li>
+<li><a rel=nofollow class=soc-youtube href=#></a></li>
+<li><a rel=nofollow class=soc-rss href=#></a></li>
+</ul>
+<!--/noindex-->
+</div>
+<form id=form-search class=header-menu-search role=search>
+<input type=submit value=Искать>
+<input type=search required placeholder="Для поиска нажать Enter">
+</form>
+<button id=btn-search class=btn-search-container type=button>
+<span class=btn-search-shape></span>
+</button>
+<button id=btn-menu-main type=button class="btn-menu-container menu-close">
+<span class=btn-menu-lines></span>
+</button>
+</header>
+<div id=content-wrapper>
+<!-- Main Navigation -->
+<nav class=menu-main itemscope itemtype=http://schema.org/SiteNavigationElement>
+<h3 itemprop=headline>{{main_nav_header}}</h3>
+<ul>
+<li itemprop=name><a href=# itemprop=url>Menu Text 1</a></li>
+<li itemprop=name><a href=# itemprop=url>Menu Text 2</a></li>
+<li class=selected itemprop=name><a href=# itemprop=url>Menu Text 3</a></li>
+<li itemprop=name><a href=# itemprop=url>Menu Text 4</a></li>
+<li itemprop=name><a href=# itemprop=url>Menu Text 5</a></li>
+<li itemprop=name><a href=# itemprop=url>Menu Text 6</a></li>
+</ul>
+</nav>
+<!-- Main container -->
+<div id=main-article-list>
+<main itemprop=mainEntity itemscope itemtype=http://schema.org/Blog>
+<article class=main-page-intro>
+<h2>Сайт о {{site_title}} text text text text text</h2>
+<p>
+ВВОДНЫЙ ТЕКСТ О САЙТЕ в объёме, достаточном для заполнения экрана при загрузке на мобильном.
+</p>
+<p>
+Разнообразный и богатый опыт сложившаяся структура организации позволяет выполнять важные задания по разработке дальнейших направлений развития. С другой стороны дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.
+</p>
+</article>
+<section class=post-list>
+<meta itemprop=description content="{{site_name}}: {{site_title}}">
+<h3 itemprop=headline class=post-list-header>{{post_list_header}}</h3>
+<article itemprop=blogPost itemscope itemtype=http://schema.org/BlogPosting class=post-list-item>
+<meta itemprop=dateModified content=2016-03-07T09:20:00+04:00>
+<meta itemprop=author content=Bezlikiy>
+<!-- Заголовок статьи -->
+<h2 class=i-name itemprop=headline><a itemprop=mainEntityOfPage rel=bookmark href=#absolute_article_address>{{article_name}}</a></h2>
+<!-- Вводный текст, краткое описание статьи -->
+<div class=i-intro itemprop=articleBody>
+<!-- Иллюстрация к статье -->
+<div class=i-illustration itemprop=image itemscope itemtype=https://schema.org/ImageObject>
+<a href=#absolute_article_address><img itemprop="url image" src=img/article-intro.jpg alt={{article_illustration_text}}></a>
+<meta itemprop=width content=300>
+<meta itemprop=height content=225>
+</div>
+<p>
+Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
+используя Lorem Ipsum для распечатки образцов.
+</p>
+</div>
+<!-- Дата публикации и количество комментариев -->
+<p class=i-published>
+<time itemprop=datePublished datetime=2016-03-06>06-03-2016</time>
+<span itemprop=commentCount>25</span>
+</p>
+<!-- Категория статьи -->
+<p class=i-category>
+<!--noindex-->
+<a rel=nofollow href=#category><span itemprop=articleSection>{{article_category}}</span></a>
+<!--/noindex-->
+</p>
+<!-- Издатель статьи -->
+<div class=i-publisher itemprop=publisher itemscope itemtype=https://schema.org/Organization>
+<meta itemprop=name content={{site_name}}>
+<meta itemprop=telephone content={{publisher_telephone}}>
+<meta itemprop=address content={{publisher_sity}}>
+<div itemprop=logo itemscope itemtype=https://schema.org/ImageObject>
+<img itemprop="url image" src=img/publisher-logo.png alt="publisher logo">
+<meta itemprop=width content=420>
+<meta itemprop=height content=60>
+</div>
+</div>
+</article>
+<article itemprop=blogPost itemscope itemtype=http://schema.org/BlogPosting class=post-list-item>
+<meta itemprop=dateModified content=2016-03-07T09:20:00+04:00>
+<meta itemprop=author content=Bezlikiy>
+<!-- Заголовок статьи -->
+<h2 class=i-name itemprop=headline><a itemprop=mainEntityOfPage rel=bookmark href=#absolute_article_address>{{article_name}}</a></h2>
+<!-- Вводный текст, краткое описание статьи -->
+<div class=i-intro itemprop=articleBody>
+<!-- Иллюстрация к статье -->
+<div class=i-illustration itemprop=image itemscope itemtype=https://schema.org/ImageObject>
+<a href=#absolute_article_address><img itemprop="url image" src=img/article-intro.jpg alt={{article_illustration_text}}></a>
+<meta itemprop=width content=300>
+<meta itemprop=height content=225>
+</div>
+<p>
+Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул
+в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset
+с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной
+вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+</p>
+</div>
+<!-- Дата публикации и количество комментариев -->
+<p class=i-published>
+<time itemprop=datePublished datetime=2016-03-06>06-03-2016</time>
+<span itemprop=commentCount>25</span>
+</p>
+<!-- Категория статьи -->
+<p class=i-category>
+<!--noindex-->
+<a rel=nofollow href=#category><span itemprop=articleSection>{{article_category}}</span></a>
+<!--/noindex-->
+</p>
+<!-- Издатель статьи -->
+<div class=i-publisher itemprop=publisher itemscope itemtype=https://schema.org/Organization>
+<meta itemprop=name content={{site_name}}>
+<meta itemprop=telephone content={{publisher_telephone}}>
+<meta itemprop=address content={{publisher_sity}}>
+<div itemprop=logo itemscope itemtype=https://schema.org/ImageObject>
+<img itemprop="url image" src=img/publisher-logo.png alt="publisher logo">
+<meta itemprop=width content=420>
+<meta itemprop=height content=60>
+</div>
+</div>
+</article>
+<article itemprop=blogPost itemscope itemtype=http://schema.org/BlogPosting class=post-list-item>
+<meta itemprop=dateModified content=2016-03-07T09:20:00+04:00>
+<meta itemprop=author content=Bezlikiy>
+<!-- Заголовок статьи -->
+<h2 class=i-name itemprop=headline><a itemprop=mainEntityOfPage rel=bookmark href=#absolute_article_address>{{article_name}}</a></h2>
+<!-- Вводный текст, краткое описание статьи -->
+<div class=i-intro itemprop=articleBody>
+<!-- Иллюстрация к статье -->
+<div class=i-illustration itemprop=image itemscope itemtype=https://schema.org/ImageObject>
+<a href=#absolute_article_address><img itemprop="url image" src=img/article-intro.jpg alt={{article_illustration_text}}></a>
+<meta itemprop=width content=300>
+<meta itemprop=height content=225>
+</div>
+<p>
+Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не
+совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть
+более двух тысячелетий назад.
+</p>
+</div>
+<!-- Дата публикации и количество комментариев -->
+<p class=i-published>
+<time itemprop=datePublished datetime=2016-03-06>06-03-2016</time>
+<span itemprop=commentCount>25</span>
+</p>
+<!-- Категория статьи -->
+<p class=i-category>
+<!--noindex-->
+<a rel=nofollow href=#category><span itemprop=articleSection>{{article_category}}</span></a>
+<!--/noindex-->
+</p>
+<!-- Издатель статьи -->
+<div class=i-publisher itemprop=publisher itemscope itemtype=https://schema.org/Organization>
+<meta itemprop=name content={{site_name}}>
+<meta itemprop=telephone content={{publisher_telephone}}>
+<meta itemprop=address content={{publisher_sity}}>
+<div itemprop=logo itemscope itemtype=https://schema.org/ImageObject>
+<img itemprop="url image" src=img/publisher-logo.png alt="publisher logo">
+<meta itemprop=width content=420>
+<meta itemprop=height content=60>
+</div>
+</div>
+</article>
+<article itemprop=blogPost itemscope itemtype=http://schema.org/BlogPosting class=post-list-item>
+<meta itemprop=dateModified content=2016-03-07T09:20:00+04:00>
+<meta itemprop=author content=Bezlikiy>
+<!-- Заголовок статьи -->
+<h2 class=i-name itemprop=headline><a itemprop=mainEntityOfPage rel=bookmark href=#absolute_article_address>{{article_name}}</a></h2>
+<!-- Вводный текст, краткое описание статьи -->
+<div class=i-intro itemprop=articleBody>
+<!-- Иллюстрация к статье -->
+<div class=i-illustration itemprop=image itemscope itemtype=https://schema.org/ImageObject>
+<a href=#absolute_article_address><img itemprop="url image" src=img/article-intro.jpg alt={{article_illustration_text}}></a>
+<meta itemprop=width content=300>
+<meta itemprop=height content=225>
+</div>
+<p>
+Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно
+из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в
+классической латинской литературе.
+</p>
+</div>
+<!-- Дата публикации и количество комментариев -->
+<p class=i-published>
+<time itemprop=datePublished datetime=2016-03-06>06-03-2016</time>
+<span itemprop=commentCount>25</span>
+</p>
+<!-- Категория статьи -->
+<p class=i-category>
+<!--noindex-->
+<a rel=nofollow href=#category><span itemprop=articleSection>{{article_category}}</span></a>
+<!--/noindex-->
+</p>
+<!-- Издатель статьи -->
+<div class=i-publisher itemprop=publisher itemscope itemtype=https://schema.org/Organization>
+<meta itemprop=name content={{site_name}}>
+<meta itemprop=telephone content={{publisher_telephone}}>
+<meta itemprop=address content={{publisher_sity}}>
+<div itemprop=logo itemscope itemtype=https://schema.org/ImageObject>
+<img itemprop="url image" src=img/publisher-logo.png alt="publisher logo">
+<meta itemprop=width content=420>
+<meta itemprop=height content=60>
+</div>
+</div>
+</article>
+</section>
+</main>
+<!-- Пагинация -->
+<nav class=post-list-pagination>
+<h3>Ещё статьи</h3>
+<ul>
+<li><a href=#></a></li>
+<li><a href=#>1</a></li>
+<li><a href=#>2</a></li>
+<li class=selected><a href=#>3</a></li>
+<li><a href=#>4</a></li>
+<li><a href=#>5</a></li>
+<li><a href=#></a></li>
+</ul>
+</nav>
+</div><!-- #main-article-list -->
+<aside id=banner-b>
+<!--noindex-->
+<h3>Реклама</h3>
+<p>
+Banner B
+</p>
+<!--/noindex-->
+</aside>
+<label for=btn-menu-main></label>
+</div><!-- #content-wrapper -->
+<aside id=banner-a>
+<!--noindex-->
+<h3>Реклама</h3>
+<p>
+Banner A
+</p>
+<!--/noindex-->
+</aside>
+<!-- Footer -->
+<footer class="site-footer full-width-bar" itemscope itemtype=http://schema.org/WPFooter>
+<p>
+Copyright &copy;
+<span itemprop=copyrightYear>2016</span>
+<span itemprop=copyrightHolder>Bezlikiy</span>
+</p>
+</footer>
+</div><!-- #site-wrapper -->
+</body>
 </html>

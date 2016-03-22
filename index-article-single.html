@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{article_name}}</title>
-    <meta name="description" content="{{site_description}}">
-    <link rel="canonical" href="#absolute_page_address">
-    <link rel="apple-touch-icon" sizes="192x192" href="favicon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-    <![endif]-->
-    <script src="js/uheader.min.js"></script>
-
-    <script type="application/ld+json">
+<html lang=ru>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<title>{{article_name}}</title>
+<meta name=description content={{site_description}}>
+<link rel=canonical href=#absolute_page_address>
+<link rel=apple-touch-icon sizes=192x192 href=favicon.png>
+<link rel=icon type=image/png sizes=192x192 href=favicon.png>
+<link rel=stylesheet type=text/css href=css/style.min.css>
+<!--[if lt IE 9]>
+<script src=js/html5shiv.min.js></script>
+<![endif]-->
+<script src=js/uheader.min.js></script>
+<script type=application/ld+json>
     {
       "@context": "http://schema.org",
       "@type": "WebSite",
@@ -22,241 +21,236 @@
       "url": "#{{absolute_page_address}}"
     }
     </script>
-	</head>
-	<body>
-		<div id="site-wrapper" itemscope itemtype="http://schema.org/WebPage">
-    <meta itemprop="name" content="{{site_name}}">
-    <meta itemprop="description" content="{{site_description}}">
-
-    <!-- Header with Banner -->
-    <header id="site-header" itemscope itemtype="http://schema.org/WPHeader">
-      <div id="site-name" class="header-name full-width-bar">
-        <div>
-          <h2 itemprop="headline">{{site_name}}</h2>
-          <p itemprop="description">{{site_name_description}}</p>
-        </div>
-        <button id="btn-menu-second" class="btn-menu-container menu-close" type="button">
-          <span class="btn-menu-lines"></span>
-        </button>
-      </div>
-      <div id="site-logo" class="header-logo">
-        <a href="#">{{logo-text}}</a>
-      </div>
-      <!-- Second navigation block -->
-      <nav id="menu-second" class="header-menu-second full-width-bar">
-        <h3>Вспомогательная навигация</h3>
-        <ul>
-          <li class="selected"><a href="#">Menu Text 1</a></li>
-          <li><a href="#">Menu Text 2</a></li>
-          <li><a href="#">Menu Text 3</a></li>
-        </ul>
-      </nav>
-      <div id="menu-social" class="header-menu-social">
-        <!--noindex-->
-        <ul class="soc">
-          <li><a rel="nofollow" class="soc-vk" href="#"></a></li>
-          <li><a rel="nofollow" class="soc-google" href="#"></a></li>
-          <li><a rel="nofollow" class="soc-youtube" href="#"></a></li>
-          <li><a rel="nofollow" class="soc-rss" href="#"></a></li>
-        </ul>
-        <!--/noindex-->
-      </div>
-      <form id="form-search" class="header-menu-search" role="search">
-        <input type="submit" value="Искать">
-        <input type="search" required placeholder="Для поиска нажать Enter">
-      </form>      
-      <button id="btn-search" class="btn-search-container" type="button">
-        <span class="btn-search-shape"></span>
-      </button>
-      <button id="btn-menu-main" type="button" class="btn-menu-container menu-close">
-        <span class="btn-menu-lines"></span>
-      </button>
-    </header>
-    <div id="content-wrapper">
-      <!-- Main Navigation -->
-      <nav class="menu-main" itemscope itemtype="http://schema.org/SiteNavigationElement">
-        <h3 itemprop="headline">{{main_nav_header}}</h3>
-        <ul>
-          <li itemprop="name"><a href="#" itemprop="url">Menu Text 1</a></li>
-          <li itemprop="name"><a href="#" itemprop="url">Menu Text 2</a></li>
-          <li class="selected" itemprop="name"><a href="#" itemprop="url">Menu Text 3</a></li>
-          <li itemprop="name"><a href="#" itemprop="url">Menu Text 4</a></li>
-          <li itemprop="name"><a href="#" itemprop="url">Menu Text 5</a></li>
-          <li itemprop="name"><a href="#" itemprop="url">Menu Text 6</a></li>
-        </ul>
-      </nav>
-      <div id="main-article">
-        <!-- Breadcrumb -->
-        <nav class="i-breadcrumb" itemprop="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
-          <h4>Расположение статьи</h4>
-          <ul>
-            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="#"><span itemprop="name">{{site_name}}</span></a><meta itemprop="position" content="1"></li>  
-            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="#"><span itemprop="name">{{article_category}}</span></a><meta itemprop="position" content="2"></li>
-            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="#"><span itemprop="name">{{article_name}}</span></a><meta itemprop="position" content="3"></li>
-          </ul>
-        </nav>
-
-        <!-- Main Article Content -->
-        <main itemprop="mainEntity" itemscope itemtype="http://schema.org/Blog">
-          <meta itemprop="description" content="{{article_description}} | {{site_name}}">
-          <article class="post-article" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-            <link itemprop="mainEntityOfPage" href="#absolute_page_address">
-            <meta itemprop="dateModified" content="2016-03-07T09:20:00+04:00">
-            <header class="i-header ad-underline">
-              <h1 itemprop="headline">{{article_name}}</h1>
-
-              <!-- Дата публикации, автор, категория статьи -->
-              <p class="i-publish-info">
-                <time class="i-pic-text" itemprop="datePublished" datetime="2016-03-06">06/03/2016</time>
-                <span class="i-pic-text" itemprop="author">Bezlikiy</span>
-                <span class="i-pic-text i-category">
-                  <!--noindex-->
-                  <a rel="nofollow" href="#article_category"><span itemprop="articleSection">{{article_category}}</span></a>
-                  <!--/noindex-->
-                </span>
-              </p>
-
-              <!-- Издатель статьи -->
-              <div class="i-publisher" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-                <meta itemprop="name" content="{{site_name}}">
-                <meta itemprop="telephone" content="{{publisher_telephone}}">
-                <meta itemprop="address" content="{{publisher_sity}}">
-                <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-                  <img itemprop="url image" src="img/publisher-logo.png" alt="">
-                  <meta itemprop="width" content="420">
-                  <meta itemprop="height" content="60">
-                </div>
-              </div>
-            </header>
-            <!-- текст статьи -->
-            <div class="i-content ad-underline" itemprop="articleBody">
-              <!-- Иллюстрация к статье -->
-              <p>
-                <span class="i-illustration" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                  <img itemprop="url image" src="img/article-pic.jpg" alt="{{article_illustration_text}}">
-                  <meta itemprop="width" content="600">
-                  <meta itemprop="height" content="600">
-                </span>
-                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
-                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
-                В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, 
-                используя Lorem Ipsum для распечатки образцов.
-              </p>
-              <p>
-                Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул 
-                в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset 
-                с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной 
-                вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-              </p> 
-              <p>
-                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не 
-                совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть 
-                более двух тысячелетий назад.
-              </p>
-              <p>
-                Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно 
-                из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в 
-                классической латинской литературе.
-              </p>
-            </div>
-            <!-- User comments using http://schema.org/UserComments --> 
-            <section class="i-comment-list">
-              <h2 class="i-pic-text">Комментариев: <span itemprop="commentCount">4</span></h2>
-              
-              <article class="i-comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-                <h3 class="i-pic-text" itemprop="creator">Жук Вазавски</h3>
-                <div itemprop="text">
-                  <p>
-                    Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. 
-                  </p>  
-                </div>
-                <footer>
-                  <p>
-                    <time class="i-pic-text" itemprop="datePublished" datetime="2014-08-07T12:52:04-08:00">06-03-2016 в 12:52</time>
-                    <span class="i-pic-text"><a href="#">Ответить</a></span>
-                  </p>
-                </footer>                
-              </article>
-              <article class="i-comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-                <h3 class="i-pic-text" itemprop="creator">Max Smith</h3>
-                <div itemprop="text">
-                  <p>
-                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
-                  </p>  
-                </div>
-                <footer>
-                  <p>
-                    <time class="i-pic-text" itemprop="datePublished" datetime="2014-08-07T12:52:04-08:00">06-03-2016 в 12:52</time>
-                    <span class="i-pic-text"><a href="#">Ответить</a></span>
-                  </p>
-                </footer>                
-              </article>
-              <article class="i-comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-                <h3 class="i-pic-text" itemprop="creator">Лис Шустрович</h3>
-                <div itemprop="text">
-                  <p>
-                    Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.
-                  </p>  
-                </div>
-                <footer>
-                  <p>
-                    <time class="i-pic-text" itemprop="datePublished" datetime="2014-08-07T12:52:04-08:00">06-03-2016 в 12:52</time>
-                    <span class="i-pic-text"><a href="#">Ответить</a></span>
-                  </p>
-                </footer>                
-              </article>
-              <article class="i-comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-                <h3 class="i-pic-text" itemprop="creator">Медвед Потапович</h3>
-                <div itemprop="text">
-                  <p>
-                    Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой. 
-                  </p>  
-                </div>
-                <footer>
-                  <p>
-                    <time class="i-pic-text" itemprop="datePublished" datetime="2014-08-07T12:52:04-08:00">06-03-2016 в 12:52</time>
-                    <span class="i-pic-text"><a href="#">Ответить</a></span>
-                  </p>
-                </footer>                
-              </article>
-            </section>
-          </article>
-        </main>
-        <!-- add comment form here -->
-        <form class="add-comment" method="post">
-          <p class="i-pic-text">Оставить комментарий</p>
-          <input type="text" name="author" required placeholder="Имя">
-          <input type="email" name="email" required placeholder="E-mail">
-          <textarea name="text" required cols="30" rows="5" placeholder="Текст комментария"></textarea>
-          <input type="submit" value="Отправить">
-        </form>
-      </div><!-- #main-article -->
-      <aside id="banner-b">
-        <!--noindex-->
-        <h3>Реклама</h3>
-        <p>
-          Banner B
-        </p>
-        <!--/noindex-->
-      </aside>
-      <label for="btn-menu-main"></label>
-    </div><!-- #content-wrapper -->
-    <aside id="banner-a">
-      <!--noindex-->
-      <h3>Реклама</h3>
-      <p>
-        Banner A
-      </p>
-      <!--/noindex-->
-    </aside>
-    <!-- Footer -->
-    <footer class="site-footer full-width-bar" itemscope itemtype="http://schema.org/WPFooter">
-      <p>
-        Copyright &copy; 
-        <span itemprop="copyrightYear">2016</span> 
-        <span itemprop="copyrightHolder">Bezlikiy</span>
-      </p>
-    </footer>
-    </div><!-- #site-wrapper -->
-	</body>
+</head>
+<body>
+<div id=site-wrapper itemscope itemtype=http://schema.org/WebPage>
+<meta itemprop=name content={{site_name}}>
+<meta itemprop=description content={{site_description}}>
+<!-- Header with Banner -->
+<header id=site-header itemscope itemtype=http://schema.org/WPHeader>
+<div id=site-name class="header-name full-width-bar">
+<div>
+<h2 itemprop=headline>{{site_name}}</h2>
+<p itemprop=description>{{site_name_description}}</p>
+</div>
+<button id=btn-menu-second class="btn-menu-container menu-close" type=button>
+<span class=btn-menu-lines></span>
+</button>
+</div>
+<div id=site-logo class=header-logo>
+<a href=#>{{logo-text}}</a>
+</div>
+<!-- Second navigation block -->
+<nav id=menu-second class="header-menu-second full-width-bar">
+<h3>Вспомогательная навигация</h3>
+<ul>
+<li class=selected><a href=/>Menu Text 1</a></li>
+<li><a href=#>Menu Text 2</a></li>
+<li><a href=#>Menu Text 3</a></li>
+</ul>
+</nav>
+<div id=menu-social class=header-menu-social>
+<!--noindex-->
+<ul class=soc>
+<li><a rel=nofollow class=soc-vk href=#></a></li>
+<li><a rel=nofollow class=soc-google href=#></a></li>
+<li><a rel=nofollow class=soc-youtube href=#></a></li>
+<li><a rel=nofollow class=soc-rss href=#></a></li>
+</ul>
+<!--/noindex-->
+</div>
+<form id=form-search class=header-menu-search role=search>
+<input type=submit value=Искать>
+<input type=search required placeholder="Для поиска нажать Enter">
+</form>
+<button id=btn-search class=btn-search-container type=button>
+<span class=btn-search-shape></span>
+</button>
+<button id=btn-menu-main type=button class="btn-menu-container menu-close">
+<span class=btn-menu-lines></span>
+</button>
+</header>
+<div id=content-wrapper>
+<!-- Main Navigation -->
+<nav class=menu-main itemscope itemtype=http://schema.org/SiteNavigationElement>
+<h3 itemprop=headline>{{main_nav_header}}</h3>
+<ul>
+<li itemprop=name><a href=# itemprop=url>Menu Text 1</a></li>
+<li itemprop=name><a href=# itemprop=url>Menu Text 2</a></li>
+<li class=selected itemprop=name><a href=# itemprop=url>Menu Text 3</a></li>
+<li itemprop=name><a href=# itemprop=url>Menu Text 4</a></li>
+<li itemprop=name><a href=# itemprop=url>Menu Text 5</a></li>
+<li itemprop=name><a href=# itemprop=url>Menu Text 6</a></li>
+</ul>
+</nav>
+<div id=main-article>
+<!-- Breadcrumb -->
+<nav class=i-breadcrumb itemprop=breadcrumb itemscope itemtype=http://schema.org/BreadcrumbList>
+<h4>Расположение статьи</h4>
+<ul>
+<li itemprop=itemListElement itemscope itemtype=http://schema.org/ListItem><a itemprop=item href=#><span itemprop=name>{{site_name}}</span></a><meta itemprop=position content=1></li>
+<li itemprop=itemListElement itemscope itemtype=http://schema.org/ListItem><a itemprop=item href=#><span itemprop=name>{{article_category}}</span></a><meta itemprop=position content=2></li>
+<li itemprop=itemListElement itemscope itemtype=http://schema.org/ListItem><a itemprop=item href=#><span itemprop=name>{{article_name}}</span></a><meta itemprop=position content=3></li>
+</ul>
+</nav>
+<!-- Main Article Content -->
+<main itemprop=mainEntity itemscope itemtype=http://schema.org/Blog>
+<meta itemprop=description content="{{article_description}} | {{site_name}}">
+<article class=post-article itemprop=blogPost itemscope itemtype=http://schema.org/BlogPosting>
+<link itemprop=mainEntityOfPage href=#absolute_page_address>
+<meta itemprop=dateModified content=2016-03-07T09:20:00+04:00>
+<header class="i-header ad-underline">
+<h1 itemprop=headline>{{article_name}}</h1>
+<!-- Дата публикации, автор, категория статьи -->
+<p class=i-publish-info>
+<time class=i-pic-text itemprop=datePublished datetime=2016-03-06>06/03/2016</time>
+<span class=i-pic-text itemprop=author>Bezlikiy</span>
+<span class="i-pic-text i-category">
+<!--noindex-->
+<a rel=nofollow href=#article_category><span itemprop=articleSection>{{article_category}}</span></a>
+<!--/noindex-->
+</span>
+</p>
+<!-- Издатель статьи -->
+<div class=i-publisher itemprop=publisher itemscope itemtype=https://schema.org/Organization>
+<meta itemprop=name content={{site_name}}>
+<meta itemprop=telephone content={{publisher_telephone}}>
+<meta itemprop=address content={{publisher_sity}}>
+<div itemprop=logo itemscope itemtype=https://schema.org/ImageObject>
+<img itemprop="url image" src=img/publisher-logo.png alt="publisher logo">
+<meta itemprop=width content=420>
+<meta itemprop=height content=60>
+</div>
+</div>
+</header>
+<!-- текст статьи -->
+<div class="i-content ad-underline" itemprop=articleBody>
+<!-- Иллюстрация к статье -->
+<p>
+<span class=i-illustration itemprop=image itemscope itemtype=https://schema.org/ImageObject>
+<img itemprop="url image" src=img/article-pic.jpg alt={{article_illustration_text}}>
+<meta itemprop=width content=600>
+<meta itemprop=height content=600>
+</span>
+Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
+используя Lorem Ipsum для распечатки образцов.
+</p>
+<p>
+Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул
+в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset
+с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной
+вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+</p>
+<p>
+Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не
+совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть
+более двух тысячелетий назад.
+</p>
+<p>
+Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно
+из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в
+классической латинской литературе.
+</p>
+</div>
+<!-- User comments using http://schema.org/UserComments -->
+<section class=i-comment-list>
+<h2 class=i-pic-text>Комментариев: <span itemprop=commentCount>4</span></h2>
+<article class=i-comment itemprop=comment itemscope itemtype=http://schema.org/Comment>
+<h3 class=i-pic-text itemprop=creator>Жук Вазавски</h3>
+<div itemprop=text>
+<p>
+Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот.
+</p>
+</div>
+<footer>
+<p>
+<time class=i-pic-text itemprop=datePublished datetime=2014-08-07T12:52:04-08:00>06-03-2016 в 12:52</time>
+<span class=i-pic-text><a href=#>Ответить</a></span>
+</p>
+</footer>
+</article>
+<article class=i-comment itemprop=comment itemscope itemtype=http://schema.org/Comment>
+<h3 class=i-pic-text itemprop=creator>Max Smith</h3>
+<div itemprop=text>
+<p>
+Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+</p>
+</div>
+<footer>
+<p>
+<time class=i-pic-text itemprop=datePublished datetime=2014-08-07T12:52:04-08:00>06-03-2016 в 12:52</time>
+<span class=i-pic-text><a href=#>Ответить</a></span>
+</p>
+</footer>
+</article>
+<article class=i-comment itemprop=comment itemscope itemtype=http://schema.org/Comment>
+<h3 class=i-pic-text itemprop=creator>Лис Шустрович</h3>
+<div itemprop=text>
+<p>
+Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.
+</p>
+</div>
+<footer>
+<p>
+<time class=i-pic-text itemprop=datePublished datetime=2014-08-07T12:52:04-08:00>06-03-2016 в 12:52</time>
+<span class=i-pic-text><a href=#>Ответить</a></span>
+</p>
+</footer>
+</article>
+<article class=i-comment itemprop=comment itemscope itemtype=http://schema.org/Comment>
+<h3 class=i-pic-text itemprop=creator>Медвед Потапович</h3>
+<div itemprop=text>
+<p>
+Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой.
+</p>
+</div>
+<footer>
+<p>
+<time class=i-pic-text itemprop=datePublished datetime=2014-08-07T12:52:04-08:00>06-03-2016 в 12:52</time>
+<span class=i-pic-text><a href=#>Ответить</a></span>
+</p>
+</footer>
+</article>
+</section>
+</article>
+</main>
+<!-- add comment form here -->
+<form class=add-comment method=post>
+<p class=i-pic-text>Оставить комментарий</p>
+<input type=text name=author required placeholder=Имя>
+<input type=email name=email required placeholder=E-mail>
+<textarea name=text required cols=30 rows=5 placeholder="Текст комментария"></textarea>
+<input type=submit value=Отправить>
+</form>
+</div><!-- #main-article -->
+<aside id=banner-b>
+<!--noindex-->
+<h3>Реклама</h3>
+<p>
+Banner B
+</p>
+<!--/noindex-->
+</aside>
+<label for=btn-menu-main></label>
+</div><!-- #content-wrapper -->
+<aside id=banner-a>
+<!--noindex-->
+<h3>Реклама</h3>
+<p>
+Banner A
+</p>
+<!--/noindex-->
+</aside>
+<!-- Footer -->
+<footer class="site-footer full-width-bar" itemscope itemtype=http://schema.org/WPFooter>
+<p>
+Copyright &copy;
+<span itemprop=copyrightYear>2016</span>
+<span itemprop=copyrightHolder>Bezlikiy</span>
+</p>
+</footer>
+</div><!-- #site-wrapper -->
+</body>
 </html>
